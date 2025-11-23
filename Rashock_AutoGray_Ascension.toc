@@ -2,7 +2,8 @@
 ## Title: Rashock_AutoGray Ascension
 ## Notes: Auto-sells grey items when talking to a merchant. Use /rag to witch or "/rag on" to activate or "/rag off" to deaktivate the autosell. 
 ## Author: Rashock
-## Version: 1.0
+## Version: 1.1
 
 Rashock_AutoGray_Ascension.lua
+
 
