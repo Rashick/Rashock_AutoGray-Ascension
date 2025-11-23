@@ -7,7 +7,7 @@ local addonTag = "|cffffcc00Rashock_AutoGray:|r"
 local frame = CreateFrame("Frame")
 
 -- Saved toggle (im Speicher; ohne SavedVariables bleibt es pro Session)
-RASHOCK_AUTOGRAY_ENABLED = RASHOCK_AUTOGRAY_ENABLED or false
+RASHOCK_AUTOGRAY_ENABLED = RASHOCK_AUTOGRAY_ENABLED or true
 
 -- Whitelist: Items, die immer verkauft werden sollen (per Name)
 local ALWAYS_SELL_BY_NAME = {
@@ -18,6 +18,7 @@ local ALWAYS_SELL_BY_NAME = {
     ["Roasted Quail"] = true,
     ["Homemade Cherry Pie"] = true,
     ["Dried King Bolete"] = true,
+    ["Nightcrawlers"] = true, 
 }
 
 local function FormatMoney(copperTotal)
@@ -102,3 +103,4 @@ end)
 
 frame:RegisterEvent("PLAYER_LOGIN")
 frame:RegisterEvent("MERCHANT_SHOW")
+
